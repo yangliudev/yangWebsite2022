@@ -6,11 +6,18 @@ const IndexPage = () => {
   return (
     <main>
       <title>Yang Liu</title>
+      <Container>
+        <Text>Hi, my name is Yang Liu</Text>
+        <Text>I am a Software Developer</Text>
+      </Container>
       <div>
-        <Container>
-          <Text>Yang Liu</Text>
-          <Text>Software Developer</Text>
-        </Container>
+        <Text>Work Experience</Text>
+      </div>
+      <div>
+        <Text>Personal Projects</Text>
+      </div>
+      <div>
+        <Text>Education</Text>
       </div>
     </main>
   );
