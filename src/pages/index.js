@@ -25,7 +25,7 @@ const IndexPage = () => {
       <PersonalProjectsDiv>
         <Text>Work Experience</Text>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. q Vivamus
           feugiat sem erat. Vestibulum ultricies felis eleifend pretium mollis.
           Nunc facilisis, tortor eu euismod lacinia, lorem erat porta velit, et
           sagittis justo turpis vitae turpis. Nulla sapien mi, dictum vel quam
