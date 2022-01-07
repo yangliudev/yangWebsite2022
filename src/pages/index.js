@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import profile from "../images/profile.jpg";
 import doggopedia from "../images/doggopedia.png";
-import hungryHippos from "../images/hungryHippos.png";
+import hungryHippos from "../images/hungry-hippos.png";
 
 const IndexPage = () => {
   return (
