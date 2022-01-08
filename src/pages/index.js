@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import profile from "../images/profile.jpg";
@@ -10,7 +10,7 @@ import hungryHippos from "../images/hungry-hippos.png";
 
 const IndexPage = () => {
   return (
-    <div>
+    <Container>
       <title>Yang Liu</title>
       <TitleDiv>
         <Header>Hi, my name is Yang Liu</Header>
@@ -23,20 +23,36 @@ const IndexPage = () => {
         ></Image>
       </TitleDiv>
       <PersonalProjectsDiv>
-        <Text>Work Experience</Text>
+        <Header>Work Experience</Header>
+        <Text>PhoneBox</Text>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. q Vivamus
-          feugiat sem erat. Vestibulum ultricies felis eleifend pretium mollis.
-          Nunc facilisis, tortor eu euismod lacinia, lorem erat porta velit, et
-          sagittis justo turpis vitae turpis. Nulla sapien mi, dictum vel quam
-          ac, posuere consectetur nunc. Ut quam nisi, imperdiet ut risus at,
-          dictum iaculis nisl. Aenean urna lacus, condimentum posuere aliquam
-          sed, elementum vitae eros. Nulla nec ipsum convallis, pulvinar leo
-          maximus, condimentum ante.
+          - Collaborated with engineers and designers to develop a responsive
+          cross-platform mobile application using React Native. Improved
+          usability rate by approximately 33% by migrating self-serve services
+          to a mobile environment.
+          <br /> <br />- Individually managed and lead the development phases of
+          the mobile application project from start to finish, which included
+          working with design and development to testing and deployment.
+          Currently there is approximately 11,200 active users using the app.
+          <br /> <br />- Partnered with the development and design team to
+          upgrade our current e-commerce website from a legacy framework to a
+          modern one, by migrating from ASP.NET 4.5 to React with Gatsby.js and
+          TypeScript. Beta version of the website was deployed with minimal
+          issues.
+          <br /> <br />- Updated and maintained existing projects with a user
+          base of approximately 30,000 clients such as the self-serve (Vue.js)
+          and e-commerce website (.NET), adding new and improving upon existing
+          features including but not limited to a new authentication system,
+          additional payment options, and UI changes.
+          <br /> <br />- Worked with the SQL Server database to resolve various
+          user data issues brought up by the customer service department, such
+          as required modifications to a client's personal information resulting
+          in improved data integrity and validity.
         </Text>
+        <Text></Text>
       </PersonalProjectsDiv>
       <div>
-        <Text>Personal Projects</Text>
+        <Header>Personal Projects</Header>
         <Row>
           <Col sm={12} md={6}>
             <Row>
@@ -44,7 +60,7 @@ const IndexPage = () => {
                 <Image
                   src={doggopedia}
                   style={{ width: "200px", borderRadius: "25px" }}
-                  alt="yang_profile_pic"
+                  alt="doggopedia_pic"
                   fluid
                 ></Image>
               </Col>
@@ -74,7 +90,7 @@ const IndexPage = () => {
                 <Image
                   src={hungryHippos}
                   style={{ width: "200px", borderRadius: "25px" }}
-                  alt="yang_profile_pic"
+                  alt="hungryHippo_pic"
                   fluid
                 ></Image>
               </Col>
@@ -101,19 +117,30 @@ const IndexPage = () => {
         </Row>
       </div>
       <div>
-        <Text>Education</Text>
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          feugiat sem erat. Vestibulum ultricies felis eleifend pretium mollis.
-          Nunc facilisis, tortor eu euismod lacinia, lorem erat porta velit, et
-          sagittis justo turpis vitae turpis. Nulla sapien mi, dictum vel quam
-          ac, posuere consectetur nunc. Ut quam nisi, imperdiet ut risus at,
-          dictum iaculis nisl. Aenean urna lacus, condimentum posuere aliquam
-          sed, elementum vitae eros. Nulla nec ipsum convallis, pulvinar leo
-          maximus, condimentum ante.
-        </Text>
+        <Header>Education</Header>
+        <Row>
+          <Col>
+            <Text>Simon Fraser University</Text>
+            <Text>BSc. Data Science</Text>
+          </Col>
+
+          <Col>
+            <Text>January 2022 - January 2025 (Expected)</Text>
+          </Col>
+        </Row>
+        <br />
+        <Row>
+          <Col>
+            <Text>British Columbia Institute of Technology</Text>
+            <Text>Diploma in Information Technology</Text>
+          </Col>
+
+          <Col>
+            <Text>January 2019 - January 2021</Text>
+          </Col>
+        </Row>
       </div>
-    </div>
+    </Container>
   );
 };
 
