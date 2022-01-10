@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import styled from "styled-components";
 import { Row, Col, Image, Container } from "react-bootstrap";
@@ -7,6 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import profile from "../images/profile.jpg";
 import doggopedia from "../images/doggopedia.png";
 import hungryHippos from "../images/hungry-hippos.png";
+
+import PhoneBox from "../components/react-collapsed/PhoneBox";
+import TedxAbbotsford from "../components/react-collapsed/TedxAbbotsford";
+import Isaca from "../components/react-collapsed/Isaca";
 
 const IndexPage = () => {
   return (
@@ -22,37 +26,17 @@ const IndexPage = () => {
           fluid
         ></Image>
       </TitleDiv>
+
       <PersonalProjectsDiv>
-        <Header>Work Experience</Header>
-        <Text>PhoneBox</Text>
-        <Text>
-          - Collaborated with engineers and designers to develop a responsive
-          cross-platform mobile application using React Native. Improved
-          usability rate by approximately 33% by migrating self-serve services
-          to a mobile environment.
-          <br /> <br />- Individually managed and lead the development phases of
-          the mobile application project from start to finish, which included
-          working with design and development to testing and deployment.
-          Currently there is approximately 11,200 active users using the app.
-          <br /> <br />- Partnered with the development and design team to
-          upgrade our current e-commerce website from a legacy framework to a
-          modern one, by migrating from ASP.NET 4.5 to React with Gatsby.js and
-          TypeScript. Beta version of the website was deployed with minimal
-          issues.
-          <br /> <br />- Updated and maintained existing projects with a user
-          base of approximately 30,000 clients such as the self-serve (Vue.js)
-          and e-commerce website (.NET), adding new and improving upon existing
-          features including but not limited to a new authentication system,
-          additional payment options, and UI changes.
-          <br /> <br />- Worked with the SQL Server database to resolve various
-          user data issues brought up by the customer service department, such
-          as required modifications to a client's personal information resulting
-          in improved data integrity and validity.
-        </Text>
-        <Text></Text>
+        <Topic>Work Experience</Topic>
+        <PhoneBox />
+        <br />
+        <TedxAbbotsford />
+        <br />
+        <Isaca />
       </PersonalProjectsDiv>
       <div>
-        <Header>Personal Projects</Header>
+        <Topic>Personal Projects</Topic>
         <Row>
           <Col sm={12} md={6}>
             <Row>
@@ -117,7 +101,7 @@ const IndexPage = () => {
         </Row>
       </div>
       <div>
-        <Header>Education</Header>
+        <Topic>Education</Topic>
         <Row>
           <Col>
             <Text>Simon Fraser University</Text>
@@ -167,6 +151,12 @@ const Header = styled.p`
 const SubHeader = styled.p`
   font-family: "Montserrat";
   font-size: 1.2em;
+`;
+
+const Topic = styled.p`
+  font-family: "Montserrat";
+  font-size: 1.75em;
+  text-decoration: underline;
 `;
 
 const Text = styled.p`
