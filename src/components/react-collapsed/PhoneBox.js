@@ -5,6 +5,7 @@ import useCollapse from "react-collapsed";
 import styled from "styled-components";
 
 import phonebox from "../../images/phonebox.png";
+import rightArrow from "../../images/right-arrow.png";
 
 const PhoneBox = () => {
   const [isExpanded, setExpanded] = useState(false);
@@ -12,8 +13,14 @@ const PhoneBox = () => {
     isExpanded,
   });
 
+  const [isArrowRotated, setIsArrowRotated] = useState(false);
+
+  const rotateArrow = () => {
+    setIsArrowRotated(!isArrowRotated);
+  };
+
   return (
-    <>
+    <div onClick={() => rotateArrow()}>
       <Row
         {...getToggleProps({
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
@@ -35,10 +42,23 @@ const PhoneBox = () => {
           </Row>
         </Col>
         <Col>
-          <Text>March 2021 - January 2022</Text>
+          <Row>
+            <Col>
+              <Duration>March 2021 - January 2022</Duration>
+            </Col>
+            <Col>
+              <MyImage
+                src={rightArrow}
+                style={{ width: "25px" }}
+                alt="rightArrow_pic"
+                isArrowRotated={isArrowRotated}
+              ></MyImage>
+            </Col>
+          </Row>
         </Col>
       </Row>
       <br />
+
       <section {...getCollapseProps()}>
         <Text>
           Check out the app on the{" "}
@@ -90,12 +110,18 @@ const PhoneBox = () => {
           in improved data integrity and validity.
         </Text>
       </section>
-    </>
+    </div>
   );
 };
 
 const Text = styled.p`
   font-family: "Montserrat";
+`;
+
+const Duration = styled.p`
+  font-family: "Montserrat";
+  white-space: nowrap;
+  overflow: auto;
 `;
 
 const HyperLink = styled.span`
@@ -105,6 +131,20 @@ const HyperLink = styled.span`
   :hover {
     cursor: pointer;
   }
+`;
+
+const MyImage = styled.img`
+  display: block;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+
+  -webkit-transform: ${(props) =>
+    props.isArrowRotated ? "rotate(90deg)" : "rotate(0deg)"};
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
 `;
 
 export default PhoneBox;

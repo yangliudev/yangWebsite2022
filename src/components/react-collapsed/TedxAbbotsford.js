@@ -5,6 +5,7 @@ import useCollapse from "react-collapsed";
 import styled from "styled-components";
 
 import ted from "../../images/ted.jpg";
+import rightArrow from "../../images/right-arrow.png";
 
 const TedxAbbotsford = () => {
   const [isExpanded, setExpanded] = useState(false);
@@ -12,8 +13,14 @@ const TedxAbbotsford = () => {
     isExpanded,
   });
 
+  const [isArrowRotated, setIsArrowRotated] = useState(false);
+
+  const rotateArrow = () => {
+    setIsArrowRotated(!isArrowRotated);
+  };
+
   return (
-    <>
+    <div onClick={() => rotateArrow()}>
       <Row
         {...getToggleProps({
           onClick: () => setExpanded((prevExpanded) => !prevExpanded),
@@ -35,10 +42,23 @@ const TedxAbbotsford = () => {
           </Row>
         </Col>
         <Col>
-          <Text>September 2020 - December 2020</Text>
+          <Row>
+            <Col>
+              <Duration>September 2020 - December 2020</Duration>
+            </Col>
+            <Col>
+              <MyImage
+                src={rightArrow}
+                style={{ width: "25px" }}
+                alt="rightArrow_pic"
+                isArrowRotated={isArrowRotated}
+              ></MyImage>
+            </Col>
+          </Row>
         </Col>
       </Row>
       <br />
+
       <section {...getCollapseProps()}>
         <Text>
           - Worked with a team of six to build a web based application using
@@ -53,12 +73,32 @@ const TedxAbbotsford = () => {
           votes by students, sponsors, and faculty.
         </Text>
       </section>
-    </>
+    </div>
   );
 };
 
 const Text = styled.p`
   font-family: "Montserrat";
+`;
+
+const Duration = styled.p`
+  font-family: "Montserrat";
+  white-space: nowrap;
+  overflow: auto;
+`;
+
+const MyImage = styled.img`
+  display: block;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+
+  -webkit-transform: ${(props) =>
+    props.isArrowRotated ? "rotate(90deg)" : "rotate(0deg)"};
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
 `;
 
 export default TedxAbbotsford;
