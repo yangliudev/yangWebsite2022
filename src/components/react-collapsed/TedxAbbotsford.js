@@ -42,19 +42,15 @@ const TedxAbbotsford = () => {
           </Row>
         </Col>
         <Col>
-          <Row>
-            <Col>
-              <Duration>September 2020 - December 2020</Duration>
-            </Col>
-            <Col>
-              <MyImage
-                src={rightArrow}
-                style={{ width: "25px" }}
-                alt="rightArrow_pic"
-                isArrowRotated={isArrowRotated}
-              ></MyImage>
-            </Col>
-          </Row>
+          <ArrowDiv>
+            <Duration>September 2020 - December 2020</Duration>
+            <MyImage
+              src={rightArrow}
+              style={{ width: "25px", marginLeft: "10px" }}
+              alt="rightArrow_pic"
+              isArrowRotated={isArrowRotated}
+            />
+          </ArrowDiv>
         </Col>
       </Row>
       <br />
@@ -85,6 +81,12 @@ const Duration = styled.p`
   font-family: "Montserrat";
   white-space: nowrap;
   overflow: auto;
+`;
+
+const ArrowDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const MyImage = styled.img`
