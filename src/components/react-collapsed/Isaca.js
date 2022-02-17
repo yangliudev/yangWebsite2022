@@ -33,7 +33,6 @@ const Isaca = () => {
                 src={isaca}
                 style={{ width: "60px", borderRadius: "10px" }}
                 alt="isaca_pic"
-                fluid
               ></Image>
             </Col>
             <Col>
@@ -43,7 +42,7 @@ const Isaca = () => {
         </Col>
         <Col>
           <ArrowDiv>
-            <Duration>January 2020 - May 2020</Duration>
+            <Duration>Jan 2020 - May 2020</Duration>
             <MyImage
               src={rightArrow}
               style={{ width: "25px", marginLeft: "10px" }}
@@ -75,8 +74,6 @@ const Text = styled.p`
 
 const Duration = styled.p`
   font-family: "Montserrat";
-  white-space: nowrap;
-  overflow: auto;
 `;
 
 const ArrowDiv = styled.div`

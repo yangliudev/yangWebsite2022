@@ -142,7 +142,7 @@ const IndexPage = () => {
           </Col>
 
           <Col>
-            <Text>January 2022 - January 2025 (Expected)</Text>
+            <Text>Jan 2022 - Jan 2025 (Expected)</Text>
           </Col>
         </Row>
         <br />
@@ -153,7 +153,7 @@ const IndexPage = () => {
           </Col>
 
           <Col>
-            <Text>January 2019 - January 2021</Text>
+            <Text>Jan 2019 - Jan 2021</Text>
           </Col>
         </Row>
       </div>

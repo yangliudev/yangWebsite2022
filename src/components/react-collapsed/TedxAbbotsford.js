@@ -33,7 +33,6 @@ const TedxAbbotsford = () => {
                 src={ted}
                 style={{ width: "50px", borderRadius: "10px" }}
                 alt="ted_pic"
-                fluid
               ></Image>
             </Col>
             <Col>
@@ -43,7 +42,7 @@ const TedxAbbotsford = () => {
         </Col>
         <Col>
           <ArrowDiv>
-            <Duration>September 2020 - December 2020</Duration>
+            <Duration>Sep 2020 - Dec 2020</Duration>
             <MyImage
               src={rightArrow}
               style={{ width: "25px", marginLeft: "10px" }}
@@ -79,8 +78,6 @@ const Text = styled.p`
 
 const Duration = styled.p`
   font-family: "Montserrat";
-  white-space: nowrap;
-  overflow: auto;
 `;
 
 const ArrowDiv = styled.div`

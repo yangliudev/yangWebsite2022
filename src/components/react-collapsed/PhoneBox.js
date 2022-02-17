@@ -33,7 +33,6 @@ const PhoneBox = () => {
                 src={phonebox}
                 style={{ width: "50px" }}
                 alt="phonebox_pic"
-                fluid
               ></Image>
             </Col>
             <Col>
@@ -43,7 +42,7 @@ const PhoneBox = () => {
         </Col>
         <Col>
           <ArrowDiv>
-            <Duration>March 2021 - Feb 2022</Duration>
+            <Duration>Mar 2021 - Feb 2022</Duration>
             <MyImage
               src={rightArrow}
               style={{ width: "25px", marginLeft: "10px" }}
@@ -116,8 +115,6 @@ const Text = styled.p`
 
 const Duration = styled.p`
   font-family: "Montserrat";
-  white-space: nowrap;
-  overflow: auto;
 `;
 
 const ArrowDiv = styled.div`
