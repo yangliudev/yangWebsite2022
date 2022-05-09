@@ -88,7 +88,7 @@ const PhoneBox = () => {
           <br /> <br />- Individually managed and lead the development phases of
           the mobile application project from start to finish, which included
           working with design and development to testing and deployment.
-          Currently there is approximately 11,200 active users using the app.
+          Currently there is approximately 12,600 active users using the app.
           <br /> <br />- Partnered with the development and design team to
           upgrade our current e-commerce website from a legacy framework to a
           modern one, by migrating from ASP.NET 4.5 to React with Gatsby.js and
