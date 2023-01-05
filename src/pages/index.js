@@ -12,13 +12,15 @@ import stackOverflow from "../images/stack-overflow.png";
 import doggopedia from "../images/doggopedia.png";
 import hungryHippos from "../images/hungry-hippos.png";
 
+import Layout from "../components/react-collapsed/Layout/layout";
+
 import PhoneBox from "../components/react-collapsed/PhoneBox";
 import TedxAbbotsford from "../components/react-collapsed/TedxAbbotsford";
 import Isaca from "../components/react-collapsed/Isaca";
 
 const IndexPage = () => {
   return (
-    <div style={{ backgroundColor: "#edebe6" }}>
+    <Layout>
       <Container>
         <title>Yang Liu</title>
 
@@ -29,7 +31,7 @@ const IndexPage = () => {
             alt="yang_profile_pic"
             fluid
           ></Image>
-          <div style={{ marginLeft: "20%" }}>
+          <div>
             <Header>Hi, my name is Yang Liu</Header>
             <SubHeader>I am a Software Developer</SubHeader>
             <div>
@@ -162,15 +164,16 @@ const IndexPage = () => {
           </Row>
         </div>
       </Container>
-    </div>
+    </Layout>
   );
 };
 
 // Styled Components
 const TitleDiv = styled.div`
-  max-width: 600px;
+  max-width: 700px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 4%;
 `;
@@ -180,17 +183,14 @@ const PersonalProjectsDiv = styled.div`
 `;
 
 const Header = styled.p`
-  font-family: "Montserrat";
   font-size: 2em;
 `;
 
 const SubHeader = styled.p`
-  font-family: "Montserrat";
   font-size: 1.2em;
 `;
 
 const Topic = styled.p`
-  font-family: "Montserrat";
   font-size: 1.75em;
   text-decoration: underline;
 `;
@@ -200,7 +200,6 @@ const Text = styled.p`
 `;
 
 const HyperLink = styled.p`
-  font-family: "Montserrat";
   color: blue;
 
   :hover {
@@ -218,7 +217,7 @@ const SocialsImg = styled(Image)`
 `;
 
 const MyContainer = styled(Container)`
-  background-color: #e0dfda;
+  // margin-top: 10px;
 `;
 
 export default IndexPage;
