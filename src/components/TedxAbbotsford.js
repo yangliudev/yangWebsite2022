@@ -4,8 +4,8 @@ import { Row, Col, Image, Container } from "react-bootstrap";
 import useCollapse from "react-collapsed";
 import styled from "styled-components";
 
-import ted from "../../images/ted.jpg";
-import rightArrow from "../../images/right-arrow.png";
+import ted from "../images/ted.jpg";
+import rightArrow from "../images/right-arrow.png";
 
 const TedxAbbotsford = () => {
   const [isExpanded, setExpanded] = useState(false);

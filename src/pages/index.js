@@ -4,19 +4,16 @@ import styled from "styled-components";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import profile from "../images/profile.jpg";
-import linkedin from "../images/linkedin.png";
-import github from "../images/github.png";
-import stackOverflow from "../images/stack-overflow.png";
-
 import doggopedia from "../images/doggopedia.png";
 import hungryHippos from "../images/hungry-hippos.png";
 
-import Layout from "../components/react-collapsed/Layout/layout";
+import Layout from "../components/Layout/layout";
 
-import PhoneBox from "../components/react-collapsed/PhoneBox";
-import TedxAbbotsford from "../components/react-collapsed/TedxAbbotsford";
-import Isaca from "../components/react-collapsed/Isaca";
+import PhoneBox from "../components/PhoneBox";
+import TedxAbbotsford from "../components/TedxAbbotsford";
+import Isaca from "../components/Isaca";
+
+import Profile from "../components/Profile";
 
 const IndexPage = () => {
   return (
@@ -24,44 +21,7 @@ const IndexPage = () => {
       <Container>
         <title>Yang Liu</title>
 
-        <TitleDiv>
-          <Image
-            src={profile}
-            style={{ width: "200px", borderRadius: "25px" }}
-            alt="yang_profile_pic"
-            fluid
-          ></Image>
-          <div>
-            <Header>Hi, my name is Yang Liu</Header>
-            <SubHeader>I am a Software Developer</SubHeader>
-            <div>
-              <SocialsImg
-                src={linkedin}
-                alt="linkedin_pic"
-                onClick={() =>
-                  window.open("https://www.linkedin.com/in/yangliu0/", "_blank")
-                }
-              />
-              <SocialsImg
-                src={github}
-                alt="github_pic"
-                onClick={() =>
-                  window.open("https://github.com/yangliudev", "_blank")
-                }
-              />
-              <SocialsImg
-                src={stackOverflow}
-                alt="stackOverflow_pic"
-                onClick={() =>
-                  window.open(
-                    "https://stackoverflow.com/users/15482494/yangcodes",
-                    "_blank"
-                  )
-                }
-              />
-            </div>
-          </div>
-        </TitleDiv>
+        <Profile />
 
         <PersonalProjectsDiv>
           <Topic>Work Experience</Topic>
@@ -169,21 +129,9 @@ const IndexPage = () => {
 };
 
 // Styled Components
-const TitleDiv = styled.div`
-  max-width: 700px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4%;
-`;
 
 const PersonalProjectsDiv = styled.div`
   width: 50%;
-`;
-
-const Header = styled.p`
-  font-size: 2em;
 `;
 
 const SubHeader = styled.p`
@@ -201,15 +149,6 @@ const Text = styled.p`
 
 const HyperLink = styled.p`
   color: blue;
-
-  :hover {
-    cursor: pointer;
-  }
-`;
-
-const SocialsImg = styled(Image)`
-  width: 22px;
-  margin: 0px 10px;
 
   :hover {
     cursor: pointer;

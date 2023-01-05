@@ -4,8 +4,8 @@ import { Row, Col, Image, Container } from "react-bootstrap";
 import useCollapse from "react-collapsed";
 import styled from "styled-components";
 
-import isaca from "../../images/isaca.png";
-import rightArrow from "../../images/right-arrow.png";
+import isaca from "../images/isaca.png";
+import rightArrow from "../images/right-arrow.png";
 
 const Isaca = () => {
   const [isExpanded, setExpanded] = useState(false);
