@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Education = () => {
   return (
-    <div>
+    <EducationDiv>
       <Topic>Education</Topic>
       <Row>
         <Col>
@@ -27,9 +27,13 @@ const Education = () => {
           <Text>Jan 2019 - Jan 2021</Text>
         </Col>
       </Row>
-    </div>
+    </EducationDiv>
   );
 };
+
+const EducationDiv = styled.div`
+  margin-top: 40px;
+`;
 
 const Topic = styled.p`
   font-size: 1.75em;

@@ -22,14 +22,15 @@ const IndexPage = () => {
 
         <Profile />
 
-        <PersonalProjectsDiv>
+        <WorkExperienceDiv>
           <Topic>Work Experience</Topic>
+          <br />
           <PhoneBox />
           <br />
           <TedxAbbotsford />
           <br />
           <Isaca />
-        </PersonalProjectsDiv>
+        </WorkExperienceDiv>
 
         <PersonalProjects />
 
@@ -39,19 +40,14 @@ const IndexPage = () => {
   );
 };
 
-// Styled Components
-
-const PersonalProjectsDiv = styled.div`
+const WorkExperienceDiv = styled.div`
   width: 50%;
+  margin-top: 40px;
 `;
 
 const Topic = styled.p`
   font-size: 1.75em;
   text-decoration: underline;
-`;
-
-const MyContainer = styled(Container)`
-  // margin-top: 10px;
 `;
 
 export default IndexPage;
