@@ -42,7 +42,7 @@ const PhoneBox = () => {
         </Col>
         <Col>
           <ArrowDiv>
-            <Duration>Mar 2021 - Present</Duration>
+            <Duration>Mar 2021 - Sep 2022</Duration>
             <MyImage
               src={rightArrow}
               style={{ width: "25px", marginLeft: "10px" }}
