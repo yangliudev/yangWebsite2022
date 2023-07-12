@@ -36,13 +36,13 @@ const Isaca = () => {
               ></Image>
             </Col>
             <Col>
-              <Text>ISACA</Text>
+              <p>ISACA</p>
             </Col>
           </Row>
         </Col>
         <Col>
           <ArrowDiv>
-            <Duration>Jan 2020 - May 2020</Duration>
+            <p>Jan 2020 - May 2020</p>
             <MyImage
               src={rightArrow}
               style={{ width: "25px", marginLeft: "10px" }}
@@ -55,26 +55,18 @@ const Isaca = () => {
       <br />
 
       <section {...getCollapseProps()}>
-        <Text>
+        <p>
           - Worked with a team of eight to develop a mobile app to advertise
           company events, similar to Eventbrite.
           <br /> <br />- Created wireframe designs of screens using Figma and
           developed UI of app using React Native with Expo.
           <br /> <br />- Project placed 1st out of 21 others from majority votes
           by students, sponsors, and faculty.
-        </Text>
+        </p>
       </section>
     </div>
   );
 };
-
-const Text = styled.p`
-  font-family: "Montserrat";
-`;
-
-const Duration = styled.p`
-  font-family: "Montserrat";
-`;
 
 const ArrowDiv = styled.div`
   display: flex;

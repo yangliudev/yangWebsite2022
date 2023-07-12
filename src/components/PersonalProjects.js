@@ -21,11 +21,11 @@ const PersonalProjects = () => {
             </Col>
             <Col>
               <SubHeader>Doggopedia</SubHeader>
-              <Text>
+              <p>
                 An encyclopedia based app focused on teaching people about
                 various different dog breeds. Information was pulled using the
                 Wikipedia API.
-              </Text>
+              </p>
               <HyperLink
                 onClick={() =>
                   window.open(
@@ -51,10 +51,6 @@ const SubHeader = styled.p`
 const Topic = styled.p`
   font-size: 1.75em;
   text-decoration: underline;
-`;
-
-const Text = styled.p`
-  font-family: "Montserrat";
 `;
 
 const HyperLink = styled.p`

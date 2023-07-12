@@ -36,13 +36,13 @@ const TedxAbbotsford = () => {
               ></Image>
             </Col>
             <Col>
-              <Text>TedxAbbotsford</Text>
+              <p>TedxAbbotsford</p>
             </Col>
           </Row>
         </Col>
         <Col>
           <ArrowDiv>
-            <Duration>Sep 2020 - Dec 2020</Duration>
+            <p>Sep 2020 - Dec 2020</p>
             <MyImage
               src={rightArrow}
               style={{ width: "25px", marginLeft: "10px" }}
@@ -55,7 +55,7 @@ const TedxAbbotsford = () => {
       <br />
 
       <section {...getCollapseProps()}>
-        <Text>
+        <p>
           - Worked with a team of six to build a web based application using
           React with the MERN stack. The web application was a tool to help
           musicians find more job opportunities during Covid.
@@ -66,19 +66,11 @@ const TedxAbbotsford = () => {
           distance calculation, and automated email deployment.
           <br /> <br /> - Project placed 2nd out of 19 others from majority
           votes by students, sponsors, and faculty.
-        </Text>
+        </p>
       </section>
     </div>
   );
 };
-
-const Text = styled.p`
-  font-family: "Montserrat";
-`;
-
-const Duration = styled.p`
-  font-family: "Montserrat";
-`;
 
 const ArrowDiv = styled.div`
   display: flex;

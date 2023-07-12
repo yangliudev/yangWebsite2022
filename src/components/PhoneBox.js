@@ -36,13 +36,13 @@ const PhoneBox = () => {
               ></Image>
             </Col>
             <Col>
-              <Text>PhoneBox</Text>
+              <p>PhoneBox</p>
             </Col>
           </Row>
         </Col>
         <Col>
           <ArrowDiv>
-            <Duration>Mar 2021 - Sep 2022</Duration>
+            <p>Mar 2021 - Sep 2022</p>
             <MyImage
               src={rightArrow}
               style={{ width: "25px", marginLeft: "10px" }}
@@ -55,7 +55,7 @@ const PhoneBox = () => {
       <br />
 
       <section {...getCollapseProps()}>
-        <Text>
+        <p>
           Check out the app on the{" "}
           <HyperLink
             onClick={() =>
@@ -79,8 +79,8 @@ const PhoneBox = () => {
             Google Play Store
           </HyperLink>
           !
-        </Text>
-        <Text>
+        </p>
+        <p>
           - Collaborated with engineers and designers to develop a responsive
           cross-platform mobile application using React Native. Improved
           usability rate by approximately 33% by migrating self-serve services
@@ -103,19 +103,11 @@ const PhoneBox = () => {
           user data issues brought up by the customer service department, such
           as required modifications to a client's personal information resulting
           in improved data integrity and validity.
-        </Text>
+        </p>
       </section>
     </div>
   );
 };
-
-const Text = styled.p`
-  font-family: "Montserrat";
-`;
-
-const Duration = styled.p`
-  font-family: "Montserrat";
-`;
 
 const ArrowDiv = styled.div`
   display: flex;
