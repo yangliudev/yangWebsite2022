@@ -27,7 +27,7 @@ const Isaca = () => {
         })}
       >
         <Col>
-          <Row>
+          <Row className="align-items-center">
             <Col>
               <Image
                 src={isaca}
@@ -36,16 +36,16 @@ const Isaca = () => {
               ></Image>
             </Col>
             <Col>
-              <p>ISACA</p>
+              <p className="text-center m-0">ISACA</p>
             </Col>
           </Row>
         </Col>
-        <Col>
+        <Col className="d-flex align-items-center justify-content-center">
           <ArrowDiv>
-            <p>Jan 2020 - May 2020</p>
+            <p className="text-center m-0">Jan 2020 - May 2020</p>
             <MyImage
               src={rightArrow}
-              style={{ width: "25px", marginLeft: "10px" }}
+              style={{ width: "16px", marginLeft: "10px" }}
               alt="rightArrow_pic"
               isArrowRotated={isArrowRotated}
             ></MyImage>
