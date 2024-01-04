@@ -20,7 +20,7 @@ const Profile = () => {
       <div>
         <Header>Hi, my name is Yang Liu</Header>
         <SubHeader>I am a Software Developer</SubHeader>
-        <div>
+        <SocialsContainer>
           <SocialsImg
             src={linkedin}
             alt="linkedin_pic"
@@ -45,7 +45,7 @@ const Profile = () => {
               )
             }
           />
-        </div>
+        </SocialsContainer>
       </div>
     </TitleDiv>
   );
@@ -54,14 +54,25 @@ const Profile = () => {
 const TitleDiv = styled.div`
   max-width: 700px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   margin-top: 40px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 const Header = styled.p`
   font-size: 2em;
+  text-align: center;
+`;
+
+const SocialsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 `;
 
 const SocialsImg = styled(Image)`
@@ -75,6 +86,7 @@ const SocialsImg = styled(Image)`
 
 const SubHeader = styled.p`
   font-size: 1.2em;
+  text-align: center;
 `;
 
 export default Profile;
