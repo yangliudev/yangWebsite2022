@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Row, Col, Image, Container } from "react-bootstrap";
-import useCollapse from "react-collapsed";
+import { useCollapse } from "react-collapsed";
 import styled from "styled-components";
 
 import isaca from "../images/isaca.png";
