@@ -11,23 +11,23 @@ import stackOverflow from "../images/stack-overflow.png";
 const Profile = () => {
   return (
     <TitleDiv>
-      <Image
+      {/* <Image
         src={profile}
         style={{ width: "200px", borderRadius: "25px" }}
         alt="yang_profile_pic"
         fluid
-      ></Image>
+      ></Image> */}
       <div>
         <Header>Hi, my name is Yang Liu</Header>
         <SubHeader>I am a Software Developer</SubHeader>
         <SocialsContainer>
-          <SocialsImg
+          {/* <SocialsImg
             src={linkedin}
             alt="linkedin_pic"
             onClick={() =>
               window.open("https://www.linkedin.com/in/yangliu0/", "_blank")
             }
-          />
+          /> */}
           <SocialsImg
             src={github}
             alt="github_pic"
